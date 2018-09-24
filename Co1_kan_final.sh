@@ -37,9 +37,6 @@
 ########################### main data import ###############################
 ############################################################################
 
-# Only use your main data import once
-# deactivated by default
-
 qiime tools import \
 --type 'SampleData[PairedEndSequencesWithQuality]' \
 --input-path zeale \
