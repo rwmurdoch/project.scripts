@@ -2,6 +2,9 @@
 #!/bin/bash
 
 ############################################################################
+##  Written for Qiime2.2018.4
+##  There have been some minor grammar/vocab changes starting with 2018.8 version
+##  Be aware that the data import command has changed slightly
 ##  This script will create an OTU table and list of 
 ##  Actual Sequence Variants (OTU representative sequences) via dada2
 ##
@@ -28,6 +31,8 @@
 ##  Search and replace "24" with your desired thread call
 ##  note also that this pipeline is designed for the 341f 785r primer set
 ##  trying with a different primer set will not work
+##  -Robert W. Murdoch, Univeristy of Tennessee Bioniformatics Resource Center
+##  contact me at rmurdoch@utk.edu if you have any questions
 ############################################################################
 
 
