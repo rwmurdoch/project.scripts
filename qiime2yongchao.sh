@@ -165,7 +165,18 @@ biom convert -i exports/feature-table.biom \
 
 Rscript create.OTU.table.R
         
+## combine various outputs into a results package
+
+tar -cf results.tar.gz \
+exports \
+yongchao-core-metrics-results-dada2 \
+yongchao-open-alpha-rarefaction-dada2.qzv \
+yongchao-dada2-taxa-bar-plots.qzv \
+yongchao_metadata.csv \
+yongchao-dada2-seq-stats.qzv \
+yongchao-demux.qzv
       
+
 
 
 
