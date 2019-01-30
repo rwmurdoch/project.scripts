@@ -1,0 +1,14 @@
+# A function for converting a data frame to a multifasta file
+# requires a simple data frame with "name" and "seq" column headers
+# copied from http://bioinfo.umassmed.edu/bootstrappers/guides/main/r_writeFasta.html
+
+writeFasta<-function(data, filename){
+  fastaLines = c()
+  for (rowNum in 1:nrow(data)){
+    fastaLines = c(fastaLines, as.character(paste(">", data[rowNum,"name"], sep = "")))
+    fastaLines = c(fastaLines,as.character(data[rowNum,"seq"]))
+  }
+  fileConn<-file(filename)
+  writeLines(fastaLines, fileConn)
+  close(fileConn)
+}
