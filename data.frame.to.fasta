@@ -1,4 +1,4 @@
-# A function for converting a data frame to a multifasta file
+# An R function for converting a data frame to a multifasta file
 # requires a simple data frame with "name" and "seq" column headers
 # copied from http://bioinfo.umassmed.edu/bootstrappers/guides/main/r_writeFasta.html
 
