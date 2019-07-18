@@ -2,6 +2,8 @@
 
 # this was run over the a set of 500 MAGs
 # primary purpose was to obtain proteins from the MAGs
+# note the use of "fast" and "norna" settings, this is a casual annotation
+# all protein multifastas are copied into a new folder at the end
 
 mkdir spruce_annot
 
@@ -17,3 +19,6 @@ for f in SPRUCE_MAGs/dREP_genomes/*
     --fast --norrna --notrna \
     "$f"
 done
+
+mkdir MAG.proteins
+cp spruce_annot/*/*.faa MAG.proteins
