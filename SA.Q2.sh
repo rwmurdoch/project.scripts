@@ -14,7 +14,10 @@
 ##  versions)
 ############################################################################
 
+### Dependencies ###
 
+# qiime2-2019.7
+# csvtools; install on linux systems by "sudo apt-get install csvtools"
 
 
 ############################################################################
@@ -274,6 +277,4 @@ tar -cf ../results.tar.gz \
 ../alpha-rarefaction.qzv \
 ../taxa-bar-plots.qzv \
 ../Sample_metadata.txt \
-../per-sample-fastq-counts.csv \
-../qtrim.stats.csv \
 ../scripts
