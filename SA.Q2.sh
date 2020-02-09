@@ -277,7 +277,3 @@ tar -cf ../results.tar.gz \
 ../per-sample-fastq-counts.csv \
 ../qtrim.stats.csv \
 ../scripts
-
-
-
-
